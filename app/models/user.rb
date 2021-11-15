@@ -1,4 +1,6 @@
-class User < ApplicationRecord
-has_many :vehicles
-has_many :reservations
+class User < ActiveRecord::Base
+    validates :email, :presence => true, :uniqueness => true
+    has_secure_password
+    has_many :vehicles
+    has_many :reservations
 end
