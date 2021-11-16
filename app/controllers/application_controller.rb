@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
     skip_before_action :verify_authenticity_token
-    before_action :is_authorized
+    # before_action :is_authorized
 
     def is_authorized
         render json: {error: "Please Sign In"} unless is_signed_in
@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
         if auth_header
             user_token = auth_header.split(" ")[1]
             begin
-                @user_id = JWT.decode(user_token, Rails.application.secrets.secret_key_base[0])[0]["user_id"] 
+                @user_id = JWT.decode(user_token, Rails.application.secrets.secret_key_base[0])[0]["user_id"]
             rescue JWT::DecodeError
                 nil
             end
