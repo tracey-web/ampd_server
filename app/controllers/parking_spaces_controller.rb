@@ -23,16 +23,25 @@ class ParkingSpacesController < ApplicationController
   # POST
   def create
     @parking_space = ParkingSpace.new(parking_space_params)
-
-    respond_to do |format|
-      if @parking_space.save
-        format.html { redirect_to @parking_space, notice: "Parking space was successfully created." }
-        format.json { render :show, status: :created, location: @parking_space }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @parking_space.errors, status: :unprocessable_entity }
+    if @parking_space.save
+      render json: {
+        status: :created,
+        parking_space: @parking_space
+      } else
+        render json: {
+          status: 500,
+          errors: @parking_space.errors.full_messages
+        }
       end
-    end
+    # respond_to do |format|
+    #   if @parking_space.save
+    #     format.html { redirect_to @parking_space, notice: "Parking space was successfully created." }
+    #     format.json { render :show, status: :created, location: @parking_space }
+    #   else
+    #     format.html { render :new, status: :unprocessable_entity }
+    #     format.json { render json: @parking_space.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   # PATCH/PUT
