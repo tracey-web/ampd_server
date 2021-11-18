@@ -12,6 +12,32 @@ p5 = ParkingSpace.create(:parking_space_type => "Driveway", :latitude => -28.634
 
 p6 = ParkingSpace.create(:parking_space_type => "Driveway", :latitude => -28.642511806763412, :longitude => 153.60396862158632, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We have a convenient curbside area for you to park and recharge your car.", :profile_image => "https://unsplash.com/photos/RPM50uWDqjU", :price => 7.15);
 
+ #  melb
+
+p7 = ParkingSpace.create(:parking_space_type => "Curbside", :latitude => -37.732785, :longitude => 144.774825, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We are Melbourne based and have a charging facility available, along with a convenient curbside area for you to park and recharge your car.", :profile_image => "https://bit.ly/30DC3Ic", :price => 6.15);
+
+p8 = ParkingSpace.create(:parking_space_type => "Driveway", :latitude => -37.73226314109304, :longitude => 144.77407397893208, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We have a chargin facility in a safe and quite area.", :profile_image => "https://bit.ly/3Du9uem", :price => 8.15);
+
+p9 = ParkingSpace.create(:parking_space_type => "Driveway", :latitude => -37.7339347089081, :longitude => 144.7747713532499, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We have a convenient curbside area for you to park and recharge your car.", :profile_image => "https://bit.ly/3FvcHuZ", :price => 5.35);
+
+
+p10 = ParkingSpace.create(:parking_space_type => "Curbside", :latitude => -37.73346556309196, :longitude => 144.7848225199463, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We have a safe place for you to park and recharge your car.", :profile_image => "https://bit.ly/3nyQZAd", :price => 5.85);
+
+p11 = ParkingSpace.create(:parking_space_type => "Curbside", :latitude => -37.731816431787415, :longitude => 144.80056074812265, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We are happy to share our charging facilities this is a new charging facility with plenty of shade.", :profile_image => "https://bit.ly/3nyQZAd", :price => 5.15);
+
+p12 = ParkingSpace.create(:parking_space_type => "Curbside", :latitude => -37.70438496173851, :longitude => 144.78778458635242, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We are happy to offer our charging facility.", :profile_image => "https://bit.ly/3nyQZAd", :price => 5.15);
+
+# syd
+
+p13 = ParkingSpace.create(:parking_space_type => "Curbside", :latitude => -33.78820299801521, :longitude => 151.18230594358565, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We have a safe place for you to park and recharge your car.", :profile_image => "https://bit.ly/3cmXnnt", :price => 7.25);
+
+p14 = ParkingSpace.create(:parking_space_type => "Curbside", :latitude => -33.79920015166173, :longitude => 151.21344968778368, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We are happy to share our charging facilities this is a new charging facility with plenty of shade.", :profile_image => "https://bit.ly/3Cpx3Uf", :price => 6.85);
+
+p15 = ParkingSpace.create(:parking_space_type => "Curbside", :latitude => -33.836863656240816, :longitude => 151.2792340646418, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "YOu are welcome to park and use our charging facilities.", :profile_image => "https://bit.ly/3HvUUWi", :price => 6.85);
+
+p16 = ParkingSpace.create(:parking_space_type => "Curbside", :latitude => -33.853723615094566, :longitude => 151.27666274557876, :access => "private", :undercover => true, :plug_profile_image => "https://bit.ly/3DeSfh0", :vehicle_size => "medium", :description => "We are offering our charging facilities for use, we have a quiet and safe neigbourhood for you to leave your car.", :profile_image => "https://bit.ly/3qLeHuX", :price => 7.15);
+
+
 puts "#{ ParkingSpace.count } parking spaces created."
 
 
@@ -50,6 +76,20 @@ u4 = User.create(:name => "Joe Zepplin", :email => "joezepis@gmail.com", :passwo
 u5 = User.create(:name => "Shay Burnell", :email => "shayburnell@gmail.com", :password => "chicken", :phone_no => "0435267324", :description => "Hi all, I am excited to offer my charging facilty as a resource for those on needing to charge their EVs, i've recently made the switch. No going back!.", :profile_image => "https://bit.ly/3kz8kXE", :host => true);
 u6 = User.create(:name => "Suzanne Miller", :email => "marthajordans@gmail.com", :password => "chicken", :phone_no => "0434447873", :description => "Hello, my charging facility is reliable and easy to use, I am excited about this new technology and happy to offer my facility to the 'ampd' community. All the best!", :profile_image => "https://bit.ly/3qyKGy9", :host => true);
 
+# new
+
+
+u7 = User.create(:name => "Janet", :email => "janetdivine@gmail.com", :password => "chicken", :phone_no => "0444441773", :description => "Hello my name is Janet, I am happily offering my charging facility to the 'ampd community, I have been a personal owner of an EV for the last 3 year and i'm not going back! ha!", :profile_image => "https://bit.ly/3HpOg3I", :host => true);
+u8 = User.create(:name => "Greg", :email => "gregishere@gmail.com", :password => "chicken", :phone_no => "0466647873", :description => "This charging facility is reliable and easy to use, I am excited about this new technology and happy to offer my facility! All the best! Greg", :profile_image => "https://bit.ly/30yFPC8", :host => true);
+u9 = User.create(:name => "Mike", :email => "mikethebuilder@gmail.com", :password => "chicken", :phone_no => "0466641233", :description => "Hi all! my name is Mike, I'm happy for to share my new charging facility, the amazing technology that is here should be available to all", :profile_image => "https://bit.ly/3cnN42D", :host => true);
+u10 = User.create(:name => "Wayne Pinot", :email => "wayne99@gmail.com", :password => "chicken", :phone_no => "0466641773", :description => "Hi all! my name is Wayne, I'm happy for to share my new charging facility, I live in a safe neighbournhood if you want to park your car", :profile_image => "https://bit.ly/3DsZulI", :host => true);
+u11 = User.create(:name => "Simone", :email => "simoneishere@gmail.com", :password => "chicken", :phone_no => "0465417734", :description => "Hello my name is Simone, You are welcome to use my charging facility, It is fairly new and I am happy to offer it to the public. All the best", :profile_image => "https://bit.ly/3CsiGyz", :host => true);
+u12 = User.create(:name => "Andrew", :email => "AndyPandy@gmail.com", :password => "chicken", :phone_no => "0465417104", :description => "Hi there! you are welcome to book my charging/ space if in the area/ passing by! All the best", :profile_image => "https://bit.ly/3Dvppcp", :host => true);
+u13 = User.create(:name => "Jayden", :email => "Jaydenonwheels@gmail.com", :password => "chicken", :phone_no => "0465417104", :description => "Hi there! My charging facility is avail for public use, help your self!", :profile_image => "https://bit.ly/3qMWiO9", :host => true);
+u14 = User.create(:name => "Angie", :email => "angieintheclouds@gmail.com", :password => "chicken", :phone_no => "0465417122", :description => "Hi there, I am more then happy to offer my charging facility. All the best!", :profile_image => "https://bit.ly/3oCLfEE", :host => true);
+u15 = User.create(:name => "Lara Jenkins", :email => "larajenkins@gmail.com", :password => "chicken", :phone_no => "0454987122", :description => "My charging facility is availble for public use. All the best!", :profile_image => "https://bit.ly/3DxnWCs", :host => true);
+u16 = User.create(:name => "Polly Jones", :email => "pollyjoness@gmail.com", :password => "chicken", :phone_no => "0465417799", :description => "Hi!, my name is polly. My charging facility is availble for public use. All the best!", :profile_image => "https://bit.ly/3Du3TVB", :host => true);
+
 puts "#{ User.count } users created."
 
 
@@ -80,12 +120,11 @@ puts "parking spaces and reviews"
 p1.reviews << rv1 << rv2
 p2.reviews << rv3 << rv5
 p3.reviews << rv4 << rv6
-p4.reviews << rv7
-p5.reviews << rv8 << rv9
+p4.reviews << rv7 << rv9
+p5.reviews << rv8
 p6.reviews << rv10
 
 puts "reservations and users"
-
 
 u1.reservations << r1
 u2.reservations << r2

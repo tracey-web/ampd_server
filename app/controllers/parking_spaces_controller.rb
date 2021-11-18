@@ -1,5 +1,6 @@
 class ParkingSpacesController < ApplicationController
   before_action :set_parking_space, only: %i[ show edit update destroy ]
+  # skip_before_action :is_authorized, only: [:index]
 
   # GET
   def index
@@ -74,6 +75,6 @@ class ParkingSpacesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def parking_space_params
-      params.require(:parking_space).permit(:parking_spaces_id, :user_id, :parking_space_type, :latitude, :longitude, :access, :undercover, :plug_profile_image, :vehicle_size, :description, :profile_image, :price, :created_at, :updated_at)
+      params.require(:parking_space).permit(:parking_spaces_id, :user_id, :parking_space_type, :latitude, :longitude, :access, :undercover, :plug_profile_image, :vehicle_size, :description, :profile_image, :price, :parking_space, :created_at, :updated_at)
     end
 end

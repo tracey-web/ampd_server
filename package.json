@@ -1,5 +1,8 @@
 {
   "name": "ampd_server",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "history": "^5.1.0",
+    "react-router-dom": "^6.0.2"
+  }
 }
