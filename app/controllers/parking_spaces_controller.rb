@@ -1,6 +1,6 @@
 class ParkingSpacesController < ApplicationController
   before_action :set_parking_space, only: %i[ show edit update destroy ]
-  # skip_before_action :is_authorized, only: [:index]
+  before_action :is_authorized, only: [:create, :update]
 
   # GET
   def index
